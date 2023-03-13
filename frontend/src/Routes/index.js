@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Chats from "../Pages/Chats";
 import Login from "../Pages/Login";
 
-const Routers = [
+const Routers = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
@@ -11,6 +11,6 @@ const Routers = [
     path: "/chats",
     element: <Chats />,
   },
-];
+]);
 
 export default Routers;
